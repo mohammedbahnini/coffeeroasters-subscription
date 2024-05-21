@@ -21,7 +21,7 @@ export default {
         'grey-disabled' : '#83888F'
       } , 
       borderRadius : {
-        '10' : 'border-'
+        '10' : '10px'
       }
     },
   },
