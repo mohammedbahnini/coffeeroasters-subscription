@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  body {
+    @apply font-fraunces bg-white min-h-svh relative ;
+  }
+
+  .body-text {
+    @apply text-[15px] leading-[25px] md:text-base md:leading-[26px] font-barlow;
+  }
+
+  .gradient-title {
+    @apply text-[40px] sm:text-[96px] md:text-[152px] leading-[72px] font-black;
+  }
+
+  .heading-1 {
+    @apply text-[40px] leading-none sm:text-5xl md:text-7xl font-black;
+  }
+
+  .heading-2 {
+    @apply text-[28px] leading-none sm:text-[32px] sm:leading-[48px] md:text-[40px] font-black;
+  }
+
+  .heading-3{
+    @apply text-[28px] leading-[32px] md:text-[32px] md:leading-[36px] font-black;
+  }
+
+  .heading-4{
+    @apply text-2xl font-black; 
+  }
+
+
+  .btn{
+    @apply inline-block text-white text-lg leading-[25px] font-black py-4 px-8 bg-dark-cyan min-w-[217px] hover:bg-cyan-hover disabled:bg-grey-disabled disabled:hover:bg-grey-disabled  border-none outline-none rounded-[6px] cursor-pointer transition-colors duration-150 ease-in ;
+  }
+
+  .text-fill-transparent{
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@layer components{
+  .container{
+    @apply mx-auto px-6 max-w-[1110px] sm:px-10  md:px-0 ;
+  }
+}
