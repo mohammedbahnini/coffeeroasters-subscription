@@ -5,23 +5,23 @@ function FooterSocial() {
         {
             to: '#',
             ariaLabeledBy: 'facebook',
-            icon: <i class="fa-brands fa-square-facebook"></i>
+            icon: <i className="fa-brands fa-square-facebook"></i>
         },
         {
             to: '#',
             ariaLabeledBy: 'twitter',
-            icon: <i class="fa-brands fa-x-twitter"></i>
+            icon: <i className="fa-brands fa-x-twitter"></i>
         },
         {
             to: '#',
             ariaLabeledBy: 'instagram',
-            icon: <i class="fa-brands fa-instagram"></i>
+            icon: <i className="fa-brands fa-instagram"></i>
         }
     ]
     return (
         <ul className='flex justify-center gap-x-6 mt-12'>
             {items.map((item, index) => (
-                <li>
+                <li key={index}>
                     <a href={item.to} aria-labelledby={item.ariaLabeledBy} className='text-white text-2xl '>{item.icon}</a>
                 </li>
             ))}

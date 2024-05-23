@@ -21,7 +21,7 @@ function FeaturesList() {
     ]
     return (
         <>
-            <div className='flex flex-col gap-y-6 mt-16'>
+            <div className='flex flex-col gap-y-6 mt-16 md:mt-[70px] '>
                 {
                     features.map((feature, index) => <FeatureItem feature={feature} key={index} />)
                 }
