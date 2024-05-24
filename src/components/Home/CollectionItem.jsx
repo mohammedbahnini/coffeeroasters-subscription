@@ -24,24 +24,28 @@ function CollectionItem(props) {
 
     <motion.div
       ref={divRef}
-      className='text-center text-dark-grey-blue md:flex md:gap-x-8 '
+      className='text-center text-dark-grey-blue 
+      md:flex md:gap-x-8
+      lg:flex-col lg:flex-1 '
     >
       <div className='md:flex-1 md:pt-4'>
         <motion.img
           src={collection.img}
           alt={collection.title}
-          className='w-[200px] mx-auto  '
+          className='w-[200px] mx-auto lg:w-[225px]  '
           initial={{ opacity: 0, y: '-40px' }}
           ref={imgRef}
         />
       </div>
       <motion.div
-      className='md:flex-1 md:text-left md:mt-[30px] '
+      className='md:flex-1 
+      md:text-left md:mt-[30px] 
+      lg:text-center lg:mt-[72px] '
         ref={textRef}
         initial={{ opacity: 0, y: '40px' }}
       >
         <h2 className="heading-4 capitalize ">{collection.title}</h2>
-        <p className="body-text mt-4">{collection.description}</p>
+        <p className="body-text mt-4 lg:mt-6">{collection.description}</p>
       </motion.div>
     </motion.div>
 

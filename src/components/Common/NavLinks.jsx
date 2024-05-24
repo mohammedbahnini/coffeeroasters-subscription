@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 function NavLinks(props) {
     const { links } = props;
@@ -9,7 +10,12 @@ function NavLinks(props) {
                 {
                     links.map((link, index) => (
                         <li key={index}>
-                            <a href={link.to} className='uppercase font-barlow text-xs leading-[15px] font-bold text-grey hover:text-dark-grey-blue transition-colors duration-200'>{link.text}</a>
+                            <NavLink
+                                className='uppercase font-barlow text-xs leading-[15px] tracking-[1px] font-bold text-grey hover:text-dark-grey-blue transition-colors duration-200'
+                                to={link.to}
+                            >
+                                {link.text}
+                            </NavLink>
                         </li>
                     ))
                 }

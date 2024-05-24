@@ -7,15 +7,15 @@ function Header() {
     const links = [
         {
             text: 'home',
-            to: '#'
+            to: ''
         },
         {
             text: 'about us',
-            to: '#'
+            to: 'about'
         },
         {
             text: 'create your plan',
-            to: '#'
+            to: 'create-plan'
         }
     ];
 
@@ -27,10 +27,10 @@ function Header() {
     return (
         <>
             <header className=''>
-                <div className="container pt-8 pb-10 md:pt-10 md:pb-[53px]">
+                <div className="container pt-8 pb-10 md:pt-10 md:pb-[53px] lg:py-11 ">
                     <div className="flex justify-between ">
                         <a href="#">
-                            <img src='/public/shared/desktop/logo.svg' alt="" className='w-[163px]' />
+                            <img src='/public/shared/desktop/logo.svg' alt="" className='w-[163px] lg:w-auto' />
                         </a>
                         <NavLinks links={links} />
                         <span className='block md:hidden' onClick={handleToggleMenu}>

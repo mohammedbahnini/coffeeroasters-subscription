@@ -19,10 +19,10 @@ function FooterSocial() {
         }
     ]
     return (
-        <ul className='flex justify-center gap-x-6 mt-12'>
+        <ul className='flex justify-center gap-x-6 mt-12 lg:mt-0 '>
             {items.map((item, index) => (
                 <li key={index}>
-                    <a href={item.to} aria-labelledby={item.ariaLabeledBy} className='text-white text-2xl '>{item.icon}</a>
+                    <a href={item.to} aria-labelledby={item.ariaLabeledBy} className='text-white hover:text-pale-orange text-2xl flex '>{item.icon}</a>
                 </li>
             ))}
         </ul>

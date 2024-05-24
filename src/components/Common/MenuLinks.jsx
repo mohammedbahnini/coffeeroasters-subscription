@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 function MenuLinks(props) {
     const { links } = props;
@@ -9,7 +10,7 @@ function MenuLinks(props) {
                 {
                     links.map((link, index) => (
                         <li key={index}>
-                            <a href={link.to} className='font-black text-2xl capitalize '>{link.text}</a>
+                            <NavLink href={link.to} className='font-black text-2xl capitalize '>{link.text}</NavLink>
                         </li>
                     ))
                 }

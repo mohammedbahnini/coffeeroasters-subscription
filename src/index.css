@@ -25,11 +25,11 @@
   }
 
   .heading-2 {
-    @apply text-[28px] leading-none sm:text-[32px] sm:leading-[48px] md:text-[40px] font-black;
+    @apply text-[28px] leading-none md:text-[32px]  md:leading-[48px] lg:text-[40px] font-black;
   }
 
   .heading-3{
-    @apply text-[28px] leading-[32px] md:text-[32px] md:leading-[36px] font-black;
+    @apply text-[28px] leading-[32px] lg:text-[32px] lg:leading-[36px] font-black;
   }
 
   .heading-4{
@@ -48,6 +48,6 @@
 
 @layer components{
   .container{
-    @apply mx-auto px-6 max-w-[1110px] md:px-10 ;
+    @apply mx-auto px-6 max-w-[1360px] md:px-10 lg:px-10 ;
   }
 }

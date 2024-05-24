@@ -25,7 +25,9 @@ function CollectionList() {
         }
     ]
     return (
-        <div className='flex flex-col gap-y-12 md:gap-y-8 md:pt-[60px] md:px-[58px] '>
+        <div className='flex flex-col gap-y-12 
+        md:gap-y-8 md:pt-[60px] md:px-[58px] 
+        lg:pt-[126px] lg:flex-row lg:px-[84px] lg:gap-x-[30px] '>
             {
                 collections.map((item, index) => <CollectionItem collection={item} key={index} />)
             }
