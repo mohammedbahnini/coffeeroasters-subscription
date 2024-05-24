@@ -14,8 +14,8 @@ function CollectionItem(props) {
 
   useEffect(() => {
     if (isInView) {
-      animate(imgRef.current, { opacity: 1, y: 0 }, { duration: 0.7, type: 'spring', })
-      animate(textRef.current, { opacity: 1, y: 0 }, { duration: 0.7, type: 'spring' })
+      animate(imgRef.current, { opacity: 1, y: 0 }, { duration:1, type: 'spring', })
+      animate(textRef.current, { opacity: 1, y: 0 }, { duration: 1, type: 'spring' })
 
     }
   }, [isInView])

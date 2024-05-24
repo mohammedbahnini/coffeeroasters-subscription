@@ -1,9 +1,17 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 
 function Country(props) {
-    const { country } = props;
+    const { country , index } = props;
     return (
-        <div className='md:flex-1'>
+
+        <motion.div
+            className={`md:flex-1 `}
+            initial={{ opacity: 0, y: '-40px' }}
+            transition={{ duration: 1, type: "spring" , delay : index * 0.2  }}
+            viewport={{ once: true, amount: 0.7 }}
+            whileInView={{ opacity: 1, y: 0  }}
+        >
 
             <div className='flex flex-col items-center md:items-start'>
                 {country.map}
@@ -21,7 +29,7 @@ function Country(props) {
                 </div>
 
             </div>
-        </div>
+        </motion.div>
     )
 }
 

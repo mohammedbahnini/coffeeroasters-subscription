@@ -2,9 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 function Hero() {
-    const initial = {
 
-    }
     return (
         <section>
             <div className="container  ">

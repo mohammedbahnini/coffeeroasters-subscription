@@ -1,8 +1,13 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink , useNavigate } from 'react-router-dom';
 
 function MenuLinks(props) {
-    const { links } = props;
+    const { links , setMenuIsIsOpen } = props;
+    const navigate = useNavigate();
+
+    const handleClick = ()=>{
+        setMenuIsIsOpen(false);
+    }
 
     return (
         <>
@@ -10,7 +15,7 @@ function MenuLinks(props) {
                 {
                     links.map((link, index) => (
                         <li key={index}>
-                            <NavLink href={link.to} className='font-black text-2xl capitalize '>{link.text}</NavLink>
+                            <NavLink to={link.to} className='font-black text-2xl capitalize ' onClick={handleClick} >{link.text}</NavLink>
                         </li>
                     ))
                 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Menu from './Menu';
 import NavLinks from './NavLinks';
+import { Link } from 'react-router-dom';
 
 function Header() {
     const [menuOpen, setMenuIsIsOpen] = useState(false);
@@ -15,7 +16,7 @@ function Header() {
         },
         {
             text: 'create your plan',
-            to: 'create-plan'
+            to: 'subscribe'
         }
     ];
 
@@ -29,9 +30,9 @@ function Header() {
             <header className=''>
                 <div className="container pt-8 pb-10 md:pt-10 md:pb-[53px] lg:py-11 ">
                     <div className="flex justify-between ">
-                        <a href="#">
+                        <Link to='/' >
                             <img src='/public/shared/desktop/logo.svg' alt="" className='w-[163px] lg:w-auto' />
-                        </a>
+                        </Link>
                         <NavLinks links={links} />
                         <span className='block md:hidden' onClick={handleToggleMenu}>
                             {
@@ -47,7 +48,7 @@ function Header() {
 
 
             </header>
-            <Menu menuOpen={menuOpen} links={links} />
+            <Menu menuOpen={menuOpen} links={links} setMenuIsIsOpen={setMenuIsIsOpen} />
 
 
         </>

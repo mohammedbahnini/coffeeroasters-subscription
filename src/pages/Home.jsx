@@ -13,7 +13,6 @@ function Home() {
             <Collection />
             <Features />
             <Steps />
-            <Footer />
         </>
     )
 }

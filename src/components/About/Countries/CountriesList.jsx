@@ -7,7 +7,7 @@ function CountriesList(props) {
 
     return (
         <div className='mt-[72px] flex flex-col gap-y-20 md:flex-row '>
-            {countries.map((country, index) => <Country country={country} key={index} />)}
+            {countries.map((country, index) => <Country country={country} key={index} index={index} />)}
         </div>
     )
 }

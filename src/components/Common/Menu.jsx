@@ -3,7 +3,7 @@ import MenuLinks from './MenuLinks';
 import cn from 'classnames';
 
 function Menu(props) {
-    const { menuOpen , links } = props;
+    const { menuOpen , links , setMenuIsIsOpen } = props;
 
 
 
@@ -12,7 +12,7 @@ function Menu(props) {
             'translate-x-0': menuOpen,
             '-translate-x-full': !menuOpen
         })}>
-            <MenuLinks links={links} />
+            <MenuLinks links={links} setMenuIsIsOpen={setMenuIsIsOpen} />
         </div>
     )
 }
