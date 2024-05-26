@@ -7,6 +7,7 @@ function MenuLinks(props) {
 
     const handleClick = ()=>{
         setMenuIsIsOpen(false);
+        document.body.style.overflowY = 'auto';
     }
 
     return (

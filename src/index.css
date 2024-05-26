@@ -44,6 +44,10 @@
   .text-fill-transparent{
     -webkit-text-fill-color: transparent;
   }
+
+  .disabled{
+    @apply bg-grey text-white;
+  }
 }
 
 @layer components{

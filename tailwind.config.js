@@ -17,11 +17,13 @@ export default {
         'dark-grey-blue': '#333D4B',
         'pale-orange': '#FDD6BA',
         'light-cream': '#FEFCF7',
-        'grey': '#83888F' , 
-        'grey-disabled' : '#83888F'
-      } , 
-      borderRadius : {
-        '10' : '10px'
+        'grey': '#83888F',
+        'grey-disabled': '#83888F',
+        'seashell': '#F4F1EB' , 
+        'grey-disabled-btn' : '#E2DEDB'
+      },
+      borderRadius: {
+        '10': '10px'
       }
     },
   },
