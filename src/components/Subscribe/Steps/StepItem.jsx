@@ -6,9 +6,9 @@ function StepItem(props) {
 
     return (
         <div className='relative  md:pt-20 [&:not(:last-child)]:pr-[10px] md:flex-1 lg:[&:not(:last-child)]:pr-[95px] lg:pt-[100px] '>
-            <div className='hidden invisible md:block md:visible flex items-center absolute top-0 left-0 right-0'>
+            <div className='hidden invisible md:block md:visible  items-center absolute top-0 left-0 right-0'>
                 <span className='block w-8 aspect-square border-2 border-dark-cyan rounded-full '></span>
-                <span className={cn('absolute -right-[14px] w-full h-[2px] bg-pale-orange -ml-[14px]' ,{ 'hidden invisible' : index === stepsLength -1 })}></span>
+                <span className={cn('absolute -right-[14px] w-full h-[2px] bg-pale-orange -ml-[14px] top-1/2 -translate-y-1/2 ' ,{ 'hidden invisible' : index === stepsLength -1 })}></span>
             </div>
 
             <div className='text-center md:text-left'>

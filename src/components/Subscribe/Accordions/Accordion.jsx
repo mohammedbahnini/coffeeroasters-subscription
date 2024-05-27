@@ -45,7 +45,7 @@ function Accordion(props) {
 
                     <div className='flex flex-col gap-y-4 md:flex-row md:gap-x-[10px]'>
                         {
-                            choices.map((choice, index) => <AccordionItem item={choice} key={index} type={item.type} selectedID={item.selectedID} />)
+                            choices.map((choice, index) => <AccordionItem item={choice} key={index} type={item.type} selectedID={item.selectedID} index={index} />)
                         }
                     </div>
                 </div>

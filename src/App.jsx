@@ -1,8 +1,14 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
-import Home from "./pages/Home"
-import About from "./pages/About"
+import React, { Suspense, lazy } from "react"
+const Home = lazy( () => import('./pages/Home'));
+const About = lazy( ()=> import('./pages/About'));
+const Subscribe = lazy( () => import('./pages/Subscribe'));
 import Layout from "./pages/Layout"
-import Subscribe from "./pages/Subscribe"
+import PageLoader from "./components/Common/PageLoader";
+
+
+
+
 
 
 const router = createBrowserRouter([
@@ -12,15 +18,15 @@ const router = createBrowserRouter([
     children : [
       {
         index : true , 
-        element: <Home />
+        element: <React.Suspense fallback={<PageLoader />}><Home /></React.Suspense> 
       } , 
       {
         path : 'about' , 
-        element : <About />
+        element : <Suspense fallback={<PageLoader />}><About /></Suspense>
       } ,
       {
         path : 'subscribe' , 
-        element : <Subscribe />
+        element :<Suspense fallback={<PageLoader />}> <Subscribe /> </Suspense>
       }
     ]
   } 

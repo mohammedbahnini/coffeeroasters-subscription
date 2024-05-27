@@ -48,6 +48,20 @@
   .disabled{
     @apply bg-grey text-white;
   }
+
+  .modal-header{
+    @apply text-[28px] leading-8 md:text-[40px] md:leading-[48px] font-black;
+  }
+
+  .modal-description , 
+  .summary-description{
+    @apply text-2xl leading-10 font-black ;
+  }
+
+  .modal-sub-description{
+    @apply text-[15px] leading-6 ;
+  }
+
 }
 
 @layer components{

@@ -1,22 +1,12 @@
 import React, { useState } from 'react'
 import Accordions from './Accordions/Accordions'
 import { Store } from '../../store/app-store'
-import CoffeeTypeAccordion from './Accordions/CoffeeTypeAccordion';
-import DrinkTypeAccordion from './Accordions/DrinkTypeAccordion';
-import QuantityAccordion from './Accordions/QuantityAccordion';
 import ChoicesLeft from './ChoicesLeft';
 import OrderSummary from './OrderSummary';
 
 function Choices() {
 
-    const {
-        accordions,
-        drinkTypeSelectedID,
-        coffeeTypeSelectedID,
-        quantitySelectedID,
-        grindTypeSelectedID,
-        deliverySelectedID
-    } = Store(store => store);
+    const { accordions } = Store(store => store);
 
 
     return (
