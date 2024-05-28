@@ -7,7 +7,7 @@ function ChoicesLeft() {
 
 
     return (
-        <div className='hidden invisible lg:visible lg:block shrink-0 w-[255px] '>
+        <div className='hidden invisible lg:visible lg:block shrink-0 w-[255px] sticky h-fit top-6 '>
             <div className='flex flex-col  divide-y-2 divide-dark-grey-blue/25'>
                 {accordions.map((item, index) => (
 
