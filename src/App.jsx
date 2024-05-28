@@ -1,42 +1,26 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom"
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom"
 import React, { Suspense, lazy } from "react"
-const Home = lazy( () => import('./pages/Home'));
-const About = lazy( ()=> import('./pages/About'));
-const Subscribe = lazy( () => import('./pages/Subscribe'));
+const Home = lazy(() => import('./pages/Home'));
+const About = lazy(() => import('./pages/About'));
+const Subscribe = lazy(() => import('./pages/Subscribe'));
 import Layout from "./pages/Layout"
 import SuspensePage from "./pages/SuspensePage";
 import ErrorPage from "./pages/ErrorPage";
 
 
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<SuspensePage page={<Home />} />} />
+        <Route path="about" element={<SuspensePage page={<About />} />} />
+        <Route path="subscribe" element={<SuspensePage page={<Subscribe />} />} />
+      </Route>
 
-
-
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Layout />,
-    children : [
-      {
-        index : true , 
-        element: <SuspensePage page={<Home />} />
-      } , 
-      {
-        path : 'about' , 
-        element : <SuspensePage page={<About />} />
-      } ,
-      {
-        path : 'subscribe' , 
-        element :<SuspensePage page={<Subscribe />} />
-      } , 
-
-    ]
-  } ,
-  {
-    path : '*' , 
-    element : <SuspensePage page={<ErrorPage />} />
-  }
-])
+      <Route path="*" element={<SuspensePage page={<ErrorPage />} />} />
+    </Route>
+  )
+)
 
 
 function App() {
