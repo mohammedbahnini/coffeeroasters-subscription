@@ -23,9 +23,6 @@ function AccordionItem(props) {
 
   const description = type === DELIVERY_TYPE ? item.description(prices[index]) : item.description;
 
-  if (type === DELIVERY_TYPE)
-    console.log(item)
-
 
   const handleClick = () => {
     if (type === QUANTITY_TYPE)

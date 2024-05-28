@@ -4,7 +4,8 @@ const Home = lazy( () => import('./pages/Home'));
 const About = lazy( ()=> import('./pages/About'));
 const Subscribe = lazy( () => import('./pages/Subscribe'));
 import Layout from "./pages/Layout"
-import PageLoader from "./components/Common/PageLoader";
+import SuspensePage from "./pages/SuspensePage";
+import ErrorPage from "./pages/ErrorPage";
 
 
 
@@ -18,18 +19,23 @@ const router = createBrowserRouter([
     children : [
       {
         index : true , 
-        element: <React.Suspense fallback={<PageLoader />}><Home /></React.Suspense> 
+        element: <SuspensePage page={<Home />} />
       } , 
       {
         path : 'about' , 
-        element : <Suspense fallback={<PageLoader />}><About /></Suspense>
+        element : <SuspensePage page={<About />} />
       } ,
       {
         path : 'subscribe' , 
-        element :<Suspense fallback={<PageLoader />}> <Subscribe /> </Suspense>
-      }
+        element :<SuspensePage page={<Subscribe />} />
+      } , 
+
     ]
-  } 
+  } ,
+  {
+    path : '*' , 
+    element : <SuspensePage page={<ErrorPage />} />
+  }
 ])
 
 

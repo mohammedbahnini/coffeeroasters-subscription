@@ -1,8 +1,8 @@
 import React from 'react'
 import Header from '../components/Common/Header'
 import { Outlet } from 'react-router'
-import Footer from '../components/Home/Footer'
-import PageLoader from '../components/Common/PageLoader'
+import Footer from '../components/Common/Footer/Footer'
+
 
 function Layout() {
     return (

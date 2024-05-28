@@ -19,9 +19,9 @@ function Quality() {
                         whileInView={{ opacity : 1 , y : 0 }}
                     >
                         <picture>
-                            <source media='(min-width : 1024px)' srcSet='/public/about/desktop/image-quality.jpg' />
-                            <source media='(min-width:768px)' srcSet='/public/about/tablet/image-quality.jpg' />
-                            <img src="/public/about/mobile/image-quality.jpg" alt="" className='w-full object-cover' />
+                            <source media='(min-width : 1024px)' srcSet='/about/desktop/image-quality.jpg' />
+                            <source media='(min-width:768px)' srcSet='/about/tablet/image-quality.jpg' />
+                            <img src="/about/mobile/image-quality.jpg" alt="" className='w-full object-cover' />
                         </picture>
                     </motion.div>
 
@@ -30,7 +30,7 @@ function Quality() {
                     className='text-center px-6 flex flex-col gap-y-6 md:px-[74px] lg:text-left lg:px-0 lg:mt-[176px]    '
                     initial={{ opacity : 0 , y : '40px' }}
                         transition={{ duration : 1 , type : "spring" }}
-                        viewport={{ once : true , amount : 0.7}}
+                        viewport={{ once : true , amount : 0.3}}
                         whileInView={{ opacity : 1 , y : 0 }}
                     >
                         <h2 className="heading-2 text-white ">Uncompromising quality</h2>

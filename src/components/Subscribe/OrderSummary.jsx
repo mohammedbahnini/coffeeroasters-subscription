@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import { Store } from '../../store/app-store'
-import Rodal from 'rodal';
-import 'rodal/lib/rodal.css';
 import cn from 'classnames';
 import { transform } from 'framer-motion';
 import Modal from 'react-responsive-modal';
@@ -42,12 +40,6 @@ const OrderSummaryText = (props) => {
 
 function OrderSummary(props) {
     const {
-        drinkTypePlaceholder,
-        coffeeTypePlaceholder,
-        quantityPlaceholder,
-        grindPlaceholder,
-        deliveryPlaceholder,
-        drinkTypePrefix,
         grindIsEnable,
         drinkTypeSelectedID,
         coffeeTypeSelectedID,
@@ -97,6 +89,13 @@ function OrderSummary(props) {
                 closeOnOverlayClick={true}
                 classNames={{
                     modal: 'p-0 max-w-[588px] mx-6'
+                }}
+                styles={{
+                    modal : {
+                        padding : 0 , 
+                        maxWidth : '588px' , 
+                        margin : '0 24px'
+                    }
                 }}
                 onClose={() => setModalVisible(false)}
             >

@@ -6,9 +6,9 @@ function Hero() {
         <section>
             <div className="container ">
 
-                <div className='bg-[url("/public/about/mobile/image-hero-whitecup.jpg")] bg-cover rounded-10
-                md:bg-[url("/public/about/tablet/image-hero-whitecup.jpg")]
-                lg:bg-[url("/public/about/desktop/image-hero-whitecup.jpg")]    '>
+                <div className='bg-[url("/about/mobile/image-hero-whitecup.jpg")] bg-cover rounded-10
+                md:bg-[url("/about/tablet/image-hero-whitecup.jpg")]
+                lg:bg-[url("/about/desktop/image-hero-whitecup.jpg")]    '>
 
                     <div className=' mx-6 pt-[111px] pb-[87px] text-center  
                     md:max-w-[398px] md:text-left md:py-[118px] md:ml-[58px]

@@ -12,13 +12,13 @@ function Commitement() {
                     className='rounded-10 overflow-hidden md:w-[280px] md:shrink-0 lg:w-[445px]'
                     initial={{ opacity : 0 , y : '-40px' }}
                     transition={{ duration : 1 , type : "spring" }}
-                    viewport={{ once : true , amount : 0.7}}
+                    viewport={{ once : true , amount : 0.3}}
                     whileInView={{ opacity : 1 , y : 0 }}
                     >
                         <picture>
-                            <source media='(min-width : 1024px)' srcSet='/public/about/desktop/image-commitment.jpg' />
-                            <source media='(min-width : 768px)' srcSet='/public/about/tablet/image-commitment.jpg' />
-                            <img src="/public/about/mobile/image-commitment.jpg" alt="" className='w-full  object-cover' />
+                            <source media='(min-width : 1024px)' srcSet='/about/desktop/image-commitment.jpg' />
+                            <source media='(min-width : 768px)' srcSet='/about/tablet/image-commitment.jpg' />
+                            <img src="/about/mobile/image-commitment.jpg" alt="" className='w-full  object-cover' />
                         </picture>
                     </motion.div>
 
@@ -26,7 +26,7 @@ function Commitement() {
                     className='mt-12 text-center flex flex-col gap-y-[30px] md:text-left md:mt-0 md:pb-6   '
                     initial={{ opacity : 0 , y : '40px' }}
                     transition={{ duration : 1 , type : "spring" }}
-                    viewport={{ once : true , amount : 0.7}}
+                    viewport={{ once : true , amount : 0.3}}
                     whileInView={{ opacity : 1 , y : 0 }}
                     >
                         <h2 className="heading-2 text-dark-grey-blue ">Our commitement</h2>

@@ -4,7 +4,7 @@ import CountriesList from './CountriesList'
 function Countries() {
     const countries = [
         {
-            map: <img src='/public/about/desktop/illustration-uk.svg' />,
+            map: <img src='/about/desktop/illustration-uk.svg' />,
             name: 'United Kingdom',
             address: {
                 avenue: '68  Asfordby Rd',
@@ -14,7 +14,7 @@ function Countries() {
             }
         },
         {
-            map: <img src='/public/about/desktop/illustration-canada.svg' />,
+            map: <img src='/about/desktop/illustration-canada.svg' />,
             name: 'Canada',
             address: {
                 avenue: '1528  Eglinton Avenue',
@@ -24,7 +24,7 @@ function Countries() {
             }
         },
         {
-            map: <img src='/public/about/desktop/illustration-australia.svg' />,
+            map: <img src='/about/desktop/illustration-australia.svg' />,
             name: 'Australia',
             address: {
                 avenue: '36 Swanston Street',

@@ -84,7 +84,7 @@ export const Store = create((set) => {
 
               state.price = state.prices[deliveryIndex];
 
-              console.log(state.prices[deliveryIndex]);
+
 
               break;
             }

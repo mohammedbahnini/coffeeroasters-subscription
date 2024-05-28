@@ -6,9 +6,9 @@ function Hero() {
     return (
         <section>
             <div className="container  ">
-                <div className='px-10 py-[100px] rounded-10 overflow-hidden flex flex-col items-center bg-[url("/public/home/mobile/image-hero-coffeepress.jpg")] bg-cover 
-                md:pr-0  md:pl-[58px] md:items-start md:py-[104px] md:bg-[url("/public/home/tablet/image-hero-coffeepress.jpg")] 
-                lg:pl-[85px] lg:py-[117px] lg:bg-[url("/public/home/desktop/image-hero-coffeepress.jpg")] lg:bg-cover ' >
+                <div className='px-10 py-[100px] rounded-10 overflow-hidden flex flex-col items-center bg-[url("/home/mobile/image-hero-coffeepress.jpg")] bg-cover 
+                md:pr-0  md:pl-[58px] md:items-start md:py-[104px] md:bg-[url("/home/tablet/image-hero-coffeepress.jpg")] 
+                lg:pl-[85px] lg:py-[117px] lg:bg-[url("/home/desktop/image-hero-coffeepress.jpg")] lg:bg-cover ' >
 
                     <div className='md:max-w-[398px] lg:max-w-[493px] '>
                         <motion.h1

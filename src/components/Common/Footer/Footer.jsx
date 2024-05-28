@@ -10,7 +10,7 @@ function Footer() {
                     <div className='flex flex-col md:items-center lg:flex-row lg:items-center py-[54px] lg:py-12 lg:px-[85px]'>
 
                         <a href="#" className='mx-auto lg:ml-0 '>
-                            <img src="/public/shared/desktop/logo-white.svg" className='lg:w-[236px]' alt="" />
+                            <img src="/shared/desktop/logo-white.svg" className='lg:w-[236px]' alt="" />
                         </a>
                         <FooterLinks />
                         <FooterSocial />

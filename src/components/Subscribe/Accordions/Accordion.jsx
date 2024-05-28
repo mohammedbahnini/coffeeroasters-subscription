@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import AccordionItems from './AccordionItems';
 import cn from 'classnames'
 import AccordionItem from './AccordionItem';
 import { Store } from '../../../store/app-store';
@@ -31,7 +30,7 @@ function Accordion(props) {
                     'rotate-180': isOpen,
                     'rotate-0': !isOpen
                 })}>
-                    <img src="/public/plan/desktop/icon-arrow.svg" alt="" />
+                    <img src="/plan/desktop/icon-arrow.svg" alt="" />
                 </span>
             </div>
 

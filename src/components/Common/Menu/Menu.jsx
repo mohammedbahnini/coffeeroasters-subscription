@@ -1,6 +1,6 @@
 import React from 'react'
-import MenuLinks from './MenuLinks';
 import cn from 'classnames';
+import MenuLinks from './MenuLinks';
 
 function Menu(props) {
     const { menuOpen , links , setMenuIsIsOpen } = props;
